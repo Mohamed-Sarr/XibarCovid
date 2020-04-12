@@ -821,6 +821,7 @@ h1,h2,h3{
         animation: spin 7s linear infinite;
     }
     div.ico_2 img{
+        display: flex;
         height: 30px;
         width: 30px;
     }
@@ -896,6 +897,7 @@ h1,h2,h3{
             align-items: center;
         }
         div.ico_2 img{
+            display: flex;
             height: 40px;
             width: 40px;
         }
@@ -906,6 +908,11 @@ h1,h2,h3{
             font-family: 'Montserrat';
         
           }
+
+          div.ico_2{
+            display: flex;
+      
+        }
           p.para_1{
             font-size: 18px;
         }
@@ -954,4 +961,11 @@ h1,h2,h3{
                 flex-direction: column;
                 align-items: center;
             }
+        }
+        @media screen and (max-width: 208px){
+           div.ico_2{
+               display: flex;
+               width: 200px;
+               height: 60px;
+           }
         }
