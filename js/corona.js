@@ -15,6 +15,9 @@ $(document).ready(function(){
     $(".menu_toggle").on("click",function(){
         $(".nav").toggleClass("showing");
     });
+    $("section ,li").on("click",function(){
+        $(".nav").removeClass("showing");
+    });
 
     $(window).scroll(function(){
 
