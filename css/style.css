@@ -478,6 +478,13 @@ h1,h2,h3{
         .showing{
             max-height: 100em;
         }
+        .hide{
+            display: none;
+          /*  position: absolute;
+            font-size: 1.5em;
+            right: 20px;
+            top:20px;*/
+        }
 
         header .menu_toggle{
             display: block;
@@ -550,6 +557,7 @@ h1,h2,h3{
 
     section{
            /* border: 1px solid #f5f5f5;*/
+           display: flex;
         }
     div.about{
         width: 100%;
@@ -561,6 +569,55 @@ h1,h2,h3{
         align-items: center;
     }
 }
+@media screen and (max-width: 750px){
+    body{
+        font-family: 'Montserrat';
+      }
+    .div_parent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    section{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .table_box{
+        position: relative;
+        width: 100%;
+        height: 700px;
+        overflow-y: scroll;
+    }
+    section.table_box{
+        width: 100%;
+    }
+    table.monde{
+        padding:10px 0px;
+        height: 80px;
+        width: auto;
+    }
+    section{
+       /* border: 1px solid #f5f5f5;*/
+    }
+    div.about{
+        width: 100%;
+       /* height: 180px;*/
+        margin:0 auto;
+/*  border: 1px solid white;*/  
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
     @media screen and (max-width: 506px){
         body{
             font-family: 'Montserrat';
@@ -911,7 +968,6 @@ h1,h2,h3{
 
           div.ico_2{
             display: flex;
-      
         }
           p.para_1{
             font-size: 18px;
@@ -969,3 +1025,326 @@ h1,h2,h3{
                height: 60px;
            }
         }
+        /*******************IPHONE***************/
+        @media only screen 
+            and (min-device-width : 375px) 
+            and (max-device-width : 812px)
+            and (-webkit-device-pixel-ratio : 3) { /* STYLES GO HERE */
+                body{
+                    font-family: 'Montserrat';
+                
+                  }
+            
+                  #topBtn{
+                    position: fixed;
+                    bottom: 16%;
+                    font-size: 22px;
+                    left: 44%;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background: #c77b25af;
+                    color: rgba(255, 255, 255, 0.918);
+                    border: none;
+                    cursor: pointer;
+                    display: none;
+                    outline: none;
+                    z-index: 30;
+                }
+                .table_container{
+                    position: relative;
+                    display:flex;
+                        width: 100%;
+                    }
+                    section{
+                       /* border: 1px solid #f5f5f5;*/
+                    }
+                    section.start_sec{
+                        height: 70vh;
+                    }
+                    p.para_1{
+                        font-size: 18px;
+                    }
+                    .rotate_03{
+                        position: relative;
+                        width: 170px;
+                        height: 170px;
+                        margin:0 auto;
+                        -webkit-animation: spin 7s linear infinite;
+                        -moz-animation: spin 7s linear infinite;
+                        animation: spin 7s linear infinite;
+                    }
+                    div.about{
+                        width: 100%;
+                       /* height: 180px;*/
+                        margin:0 auto;
+                       /* border: 1px solid white;*/
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    div.ico_2 img{
+                        display: flex;
+                        height: 40px;
+                        width: 40px;
+                    }
+                    
+            }
+                /*******************iPhone 6, 7, & 8 Plus in portrait & landscape***************/
+                @media only screen 
+                    and (min-device-width : 414px) 
+                    and (max-device-width : 736px) { /* STYLES GO HERE */
+                        body{
+                            font-family: 'Montserrat';
+                        
+                          }
+                
+                          div.ico_2{
+                            display: flex;
+                      
+                        }
+                          p.para_1{
+                            font-size: 18px;
+                        }
+                        .table_container{
+                            position: relative;
+                            display:flex;
+                                width: 100%;
+                            }
+                            #topBtn{
+                                position: fixed;
+                                bottom: 18%;
+                                font-size: 22px;
+                                left: 45%;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                background: #c77b25af;
+                                color: rgba(255, 255, 255, 0.918);
+                                border: none;
+                                cursor: pointer;
+                                display: none;
+                                outline: none;
+                                z-index: 30;
+                            }
+                        section{
+                            /*border: 1px solid #f5f5f5;*/
+                            }
+                            section.start_sec{
+                                height: 70vh;
+                            }
+                            .rotate_03{
+                                position: relative;
+                                width: 150px;
+                                height: 150px;
+                                margin:0 auto;
+                                -webkit-animation: spin 7s linear infinite;
+                                -moz-animation: spin 7s linear infinite;
+                                animation: spin 7s linear infinite;
+                            }
+                            div.about{
+                                width: 100%;
+                               /* height: 180px;*/
+                                margin:0 auto;
+                               /* border: 1px solid white;*/
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                    }
+                /*******************iPhone X in portrait & landscape***************/
+                @media only screen 
+                    and (min-device-width : 375px) 
+                    and (max-device-width : 812px)
+                    and (-webkit-device-pixel-ratio : 3) { /* STYLES GO HERE */}
+                /*******************iPhone XR**************/
+                @media only screen 
+                    and (device-width : 414px) 
+                    and (device-height : 896px) 
+                    and (-webkit-device-pixel-ratio : 2) { 
+                        body{
+                            font-family: 'Montserrat';
+                        
+                          }
+                
+                          div.ico_2{
+                            display: flex;
+                      
+                        }
+                          p.para_1{
+                            font-size: 18px;
+                        }
+                        .table_container{
+                            position: relative;
+                            display:flex;
+                                width: 100%;
+                            }
+                            #topBtn{
+                                position: fixed;
+                                bottom: 18%;
+                                font-size: 22px;
+                                left: 45%;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                background: #c77b25af;
+                                color: rgba(255, 255, 255, 0.918);
+                                border: none;
+                                cursor: pointer;
+                                display: none;
+                                outline: none;
+                                z-index: 30;
+                            }
+                        section{
+                            /*border: 1px solid #f5f5f5;*/
+                            }
+                            section.start_sec{
+                                height: 70vh;
+                            }
+                            .rotate_03{
+                                position: relative;
+                                width: 150px;
+                                height: 150px;
+                                margin:0 auto;
+                                -webkit-animation: spin 7s linear infinite;
+                                -moz-animation: spin 7s linear infinite;
+                                animation: spin 7s linear infinite;
+                            }
+                            div.about{
+                                width: 100%;
+                               /* height: 180px;*/
+                                margin:0 auto;
+                               /* border: 1px solid white;*/
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                    }
+                /*******************iPhone XS***************/
+                @media only screen 
+                    and (device-width : 375px) 
+                    and (device-height : 812px) 
+                    and (-webkit-device-pixel-ratio : 3) { 
+                        body{
+                            font-family: 'Montserrat';
+                        
+                          }
+                    
+                          #topBtn{
+                            position: fixed;
+                            bottom: 16%;
+                            font-size: 22px;
+                            left: 44%;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            background: #c77b25af;
+                            color: rgba(255, 255, 255, 0.918);
+                            border: none;
+                            cursor: pointer;
+                            display: none;
+                            outline: none;
+                            z-index: 30;
+                        }
+                        .table_container{
+                            position: relative;
+                            display:flex;
+                                width: 100%;
+                            }
+                            section{
+                               /* border: 1px solid #f5f5f5;*/
+                            }
+                            section.start_sec{
+                                height: 70vh;
+                            }
+                            p.para_1{
+                                font-size: 18px;
+                            }
+                            .rotate_03{
+                                position: relative;
+                                width: 170px;
+                                height: 170px;
+                                margin:0 auto;
+                                -webkit-animation: spin 7s linear infinite;
+                                -moz-animation: spin 7s linear infinite;
+                                animation: spin 7s linear infinite;
+                            }
+                            div.about{
+                                width: 100%;
+                               /* height: 180px;*/
+                                margin:0 auto;
+                               /* border: 1px solid white;*/
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                            div.ico_2 img{
+                                display: flex;
+                                height: 40px;
+                                width: 40px;
+                            }
+                    }
+                /*******************iPhone XS Max***************/
+                @media only screen 
+                    and (device-width : 414px) 
+                    and (device-height : 896px) 
+                    and (-webkit-device-pixel-ratio : 3) { 
+                        body{
+                            font-family: 'Montserrat';
+                        
+                          }
+                
+                          div.ico_2{
+                            display: flex;
+                      
+                        }
+                          p.para_1{
+                            font-size: 18px;
+                        }
+                        .table_container{
+                            position: relative;
+                            display:flex;
+                                width: 100%;
+                            }
+                            #topBtn{
+                                position: fixed;
+                                bottom: 18%;
+                                font-size: 22px;
+                                left: 45%;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 50%;
+                                background: #c77b25af;
+                                color: rgba(255, 255, 255, 0.918);
+                                border: none;
+                                cursor: pointer;
+                                display: none;
+                                outline: none;
+                                z-index: 30;
+                            }
+                        section{
+                            /*border: 1px solid #f5f5f5;*/
+                            }
+                            section.start_sec{
+                                height: 70vh;
+                            }
+                            .rotate_03{
+                                position: relative;
+                                width: 150px;
+                                height: 150px;
+                                margin:0 auto;
+                                -webkit-animation: spin 7s linear infinite;
+                                -moz-animation: spin 7s linear infinite;
+                                animation: spin 7s linear infinite;
+                            }
+                            div.about{
+                                width: 100%;
+                               /* height: 180px;*/
+                                margin:0 auto;
+                               /* border: 1px solid white;*/
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                    }
+                /*******************RESPONSIVE***************/
