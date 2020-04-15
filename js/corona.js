@@ -90,7 +90,7 @@ function getSenegalInfo(){
                  //   json;
                  //   console.log("les données de senegal" + json);
                 // }, 190000);
-                 var cas = json.cases -1;
+                 var cas = json.cases ;
                  var deaths = json.deaths;
                  var todayDeaths = json.todayDeaths;
                  var sous_traitement = json.active -1;
