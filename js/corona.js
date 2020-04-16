@@ -131,10 +131,10 @@ function getCountriesInfo(){
              try{
                 var json =data;
                
-               // setInterval(()=>{
-                //    json;
-               //     console.log("Données de tout les pays"+json);
-               // },180000)
+                setInterval(()=>{
+                    json;
+                    console.log("Données de tout les pays"+json);
+                },180000)
              
 
                 if(json.length > 0){
