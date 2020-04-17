@@ -109,7 +109,7 @@ function getSenegalInfo(){
                  $("#cas_guerris_sn").html(recovered);
                  $("#cas_traitement_sn").html(sous_traitement);
                  $("#cas_mort_actuel_sn").html(deaths);
-                 $("#cas_deces_sn").html(todayDeaths);
+                 $("#cas_deces_n").html(todayDeaths);
                  $("#GuerisEnPourcent").html(GuerisEnPourcent + " % ");
 
 
