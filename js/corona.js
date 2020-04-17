@@ -95,7 +95,7 @@ function getSenegalInfo(){
                  var todayDeaths = json.todayDeaths;
                  var sous_traitement = json.active -1;
                  var todayCases = json.todayCases;
-                 var recovered = 3//json.recovered;
+                 var recovered = json.recovered;
 
                  // Calcul du pourcentage des gueris
                  var Gueris_sur_total = recovered / cas;
