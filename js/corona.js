@@ -85,11 +85,11 @@ function getSenegalInfo(){
  
              try{
                  var json = data;
-                // console.log(data);
-                // setInterval(() => {
-                 //   json;
-                 //   console.log("les données de senegal" + json);
-                // }, 190000);
+                 console.log(data);
+                 setInterval(() => {
+                    json;
+                    console.log("les données de senegal" + json);
+                 }, 190000);
                  var cas = json.cases ;
                  var deaths = json.deaths;
                  var todayDeaths = json.todayDeaths;
