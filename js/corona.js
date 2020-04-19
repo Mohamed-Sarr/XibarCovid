@@ -15,7 +15,7 @@ $(document).ready(function(){
     $(".menu_toggle").on("click",function(){
         $(".nav").toggleClass("showing");
     });
-    $("section, div, li").on("click",function(){
+    $("section, div, li, #topBtn").on("click",function(){
         $(".nav").removeClass("showing");
     });
 
