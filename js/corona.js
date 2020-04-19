@@ -90,12 +90,12 @@ function getSenegalInfo(){
                     json;
                     console.log("les données de senegal" + json);
                  }, 190000);
-                 var cas = json.cases ;
-                 var deaths = json.deaths;
-                 var todayDeaths = json.todayDeaths;
-                 var sous_traitement = json.active -1;
-                 var todayCases = json.todayCases;
-                 var recovered = json.recovered;
+                 var cas = 367;//json.cases ;
+                 var deaths = 3;//json.deaths;
+                 var todayDeaths = 0;//json.todayDeaths;
+                 var sous_traitement = 143;//json.active -1;
+                 var todayCases = 17;//json.todayCases;
+                 var recovered = 220;// json.recovered;
 
                  // Calcul du pourcentage des gueris
                  var Gueris_sur_total = recovered / cas;
