@@ -93,7 +93,7 @@ function getSenegalInfo(){
                  var cas = json.cases ;
                  var deaths = json.deaths;
                  var todayDeaths = json.todayDeaths;
-                 var sous_traitement = json.active -1;
+                 var sous_traitement = json.active ;
                  var todayCases = json.todayCases;
                  var recovered = json.recovered;
 
